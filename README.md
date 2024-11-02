@@ -20,6 +20,11 @@ Execute the C Program for the desired output.
 
 # PROGRAM:
 
+
+### Developed By: JANARTHANAN K
+### Register No.: 212223040072
+### Date: 14/10/2024
+
 ## Write a C program that illustrates two processes communicating using shared memory.
 ```
 //shm.c
