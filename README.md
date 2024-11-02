@@ -1,34 +1,22 @@
 # Linux-IPC-Shared-memory
 Ex06-Linux IPC-Shared-memory
-
 # AIM:
 To Write a C program that illustrates two processes communicating using shared memory.
-
 # DESIGN STEPS:
-
 ### Step 1:
-
 Navigate to any Linux environment installed on the system or installed inside a virtual environment like virtual box/vmware or online linux JSLinux (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) or docker.
-
 ### Step 2:
-
 Write the C Program using Linux Process API - Shared Memory
-
 ### Step 3:
-
 Execute the C Program for the desired output. 
 
 # PROGRAM:
-
-
 ### Developed By: JANARTHANAN K
 ### Register No.: 212223040072
 ### Date: 14/10/2024
-
 ## Write a C program that illustrates two processes communicating using shared memory.
 ```
 //shm.c
-
 #include<unistd.h> 
 #include<stdlib.h> 
 #include<stdio.h> 
@@ -74,11 +62,7 @@ if (shmdt(shared_memory) == -1)
 fprintf(stderr, "shmdt failed\n"); exit(EXIT_FAILURE);
 } exit(EXIT_SUCCESS);
 }
-
-
-
 //shmry2.c
-
 #include<unistd.h> 
 #include<stdlib.h> 
 #include<stdio.h> 
@@ -124,19 +108,10 @@ if (shmdt(shared_memory) == -1)
 fprintf(stderr, "shmdt failed\n"); exit(EXIT_FAILURE);
 } exit(EXIT_SUCCESS);
 }
-
-
-
 ```
-
-
 ## OUTPUT:
 ![Screenshot 2024-04-29 101323](https://github.com/ANU23000217/Linux-IPC-Shared-memory/assets/139117108/086b13f2-7b78-412d-89ff-5a3098320e4b)
 
-
 ![Screenshot 2024-04-29 101334](https://github.com/ANU23000217/Linux-IPC-Shared-memory/assets/139117108/69c1f297-b189-4689-8c7f-1a46e4331d5f)
-
-
-
 # RESULT:
 The program is executed successfully.
